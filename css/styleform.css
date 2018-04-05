@@ -1,0 +1,128 @@
+.blanc
+{
+background:white;	
+}
+
+.noir
+{
+    background:#555555;	
+}
+
+.bleu
+{
+	background:lightblue;
+}
+
+.vert
+{
+	background:lightgreen;
+}
+
+.gris
+{
+	background:#efefef;
+}
+
+
+.grisbleu
+{
+	background:#5472ae;
+}
+
+.jaune
+{
+	background:yellow;
+}
+
+.orange
+{
+	background:orange;
+}
+
+.violet
+{
+   background:#ee00ee;	
+}
+
+.fonte1
+{
+	font-family:Poiret One;
+}
+
+.fonte2
+{
+	   font-family:Raleway;
+}
+
+
+
+div#bandeau
+{
+	margin-top:0px;
+	color : white;
+	font-family: Poiret One;
+	font-size:36px;
+	font-weight:bold;
+}
+
+.bleunoir
+{
+	background:#24445c;
+	border:0px;
+}
+
+footer
+{
+	height:80px;
+	color:white;
+	font-family:Poiret One;
+}
+
+div#centre
+{
+ 	margin-top:220px;
+   min-height:700px;
+   margin-bottom:20px;
+}
+
+div#divformulaire
+{
+	margin:auto;
+	margin-top:30px;
+	width:75%;
+}
+
+fieldset#fldform
+{
+      min-height:200px;
+      border:1px solid #999999;	 
+     margin-top:16px;	
+      padding:16px;	 
+}
+legend
+{
+	font-family:Raleway;
+	color:#999999;
+}
+.cadre
+{
+	background:#f0f0f0;
+	border:1px solid #999999;
+	height:100px;
+	width:50%;
+}
+
+
+
+
+span
+{
+	color:forestgreen;
+	font-family:Raleway;
+	font-size:16px;
+}
+.row
+{
+	margin-left:20px;
+	margin-top:20px;
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+
+
+<html lang="fr">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+
+    <link href='http://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+   <link href= 'bootstrap/dist/css/bootstrap.css' rel='stylesheet' />
+
+   <link href= 'bootstrap/dist/css/bootstrap-theme.min.css' rel='stylesheet' />
+
+   <link href="css/styleform.css" rel="stylesheet">
+
+     <script src="js/jquery.js" type="text/javascript"></script>
+
+ 
+
+   <script src="bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+</head>
+
+
+
+<body class="gris">
+
+<header>
+
+<div class="container">
+
+    
+
+	<div class="row">
+
+		<nav class="navbar navbar-inverse navbar-fixed-top bleunoir">
+
+		<div class=" text-center" id="bandeau">
+
+	     Périodes de Formation en Milieu Professionnel
+
+	    </div>
+
+			<div class="navbar navbar-inverse bleunoir" role="navigation">
+
+			<!-- Barre de navigation pour mobile -->
+
+			<div class="navbar-header">
+
+			
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarmobile">
+
+					<span class="sr-only">Toggle navigation</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+				</button>
+
+				
+
+			</div>
+
+			<!-- Barre de navigation pour écran -->
+
+			<div class="collapse navbar-collapse" id="navbarmobile">
+
+			
+
+				<ul class="nav navbar-nav">
+
+					<li><a href="#">Formations</a></li>
+
+					<li><a href="#">Entreprises</a></li>
+
+					<li><a href="convention.html">Conventions</a></li>
+
+					<li class="dropdown active">
+
+						<a href="formulaire_pers.html" class="dropdown-toggle" data-toggle="dropdown">Personnnes
+
+						 <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+
+							<li><a id="Stagiaires" href="#">Stagiaires</a></li>
+
+							<li><a id="Formateurs" href="#">Formateurs</a></li>
+
+							<li><a id="Tuteurs" href="#">Tuteurs</a></li>
+
+						</ul>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+		</nav>
+
+
+
+	</div>
+
+
+
+</div>
+
+</header>
+
+
+
+<div id="centre" class="container blanc">
+
+    <div id="divformulaire">
+
+	<fieldset id="fldform">
+
+			<legend id="lgd1">
+
+			</legend>
+
+			
+
+		<form role="form"> 
+
+		  <select id="listepers">
+
+		  <option>Choisir une personne</option>
+
+		  </select>
+
+		  <br /><br />
+
+		 <div class="form-group Stagiaires">
+
+			<label class="control-label" for="lsta">Sessions suivies</label>
+
+			<select id="lsta">
+
+			     <option>Choisir une session</option>
+
+			</select>
+
+			<label class="control-label" for="lsesta">Autres sessions </label>
+
+			<select id="lsesta">
+
+			     <option>Choisir une session</option>
+
+			</select>
+
+			 <button type="button" class="btn btn-xs btn-info" id="bouton_ajout_sessta">Ajouter</button>
+
+		  </div>
+
+		  
+
+		  
+
+		
+
+		
+
+		  <div class="form-group pers">
+
+			<label class="control-label" for="nom">Nom</label>
+
+			<input type="text" class="form-control" id="nom"  maxlength="30" placeholder="indiquez votre nom">
+
+		  </div>
+
+		  
+
+		   <div class="form-group pers">
+
+			<label class="control-label" for="prenom">Prénom</label>
+
+			<input type="text" class="form-control" id="prenom"  maxlength="30" placeholder="indiquez votre prenom">
+
+		  </div>
+
+		  
+
+		   <div class="form-group pers">
+
+			<label class="control-label" for="email">Adresse mail</label>
+
+			<input type="email" class="form-control" id="email"  maxlength="100" placeholder="indiquez votre email">
+
+		  </div>
+
+		  
+
+		   <div class="form-group pers">
+
+			<label class="control-label" for="portable">Portable</label>
+
+			<input type="tel" class="form-control" id="portable"  maxlength="10" placeholder="indiquez votre n° de portable">
+
+		  </div>
+
+		  
+
+		  
+
+           <div class="form-group Formateurs">
+
+			<label class="control-label" for="id">Identifiant</label>
+
+			<input type="text" class="form-control" id="id"  maxlength="8" placeholder="indiquez l'identifiant">
+
+		  </div>  
+
+
+
+
+
+            <div class="form-group Formateurs">
+
+			<label class="control-label" for="mdp">Mot de passe</label>
+
+			<input type="text" disabled="disabled" class="form-control" id="mdp"  maxlength="8" placeholder="">
+
+		    <div class="text-right">
+
+				<button type="button" id="bouton_mdp" class="btn btn-xs btn-primary">
+
+				 Créer mot de passe</button>
+
+			</div>
+
+          </div>
+
+		  
+
+		  
+
+		  
+
+            <div class="form-group Stagiaires">
+
+			<label class="control-label" for="datenaiss">Date de naissance</label>
+
+			<input type="date" class="form-control" id="datenaiss"  maxlength="10" >
+
+		  </div> 
+
+
+
+             <div class="form-group Stagiaires">
+
+			<label class="control-label" for="adresse">Adresse postale</label>
+
+			<input type="text" class="form-control" id="adresse"  maxlength="60" placeholder="indiquez votre adresse">
+
+		  </div> 
+
+
+
+          <div class="form-group Stagiaires">
+
+			<label class="control-label" for="cp">Code postal</label>
+
+			<input type="text" class="form-control" id="cp"  maxlength="5" placeholder="Code poStagiairesl">
+
+		  </div>
+
+
+
+      <div class="form-group Stagiaires">
+
+			<label class="control-label" for="ville">Ville</label>
+
+			<input type="text" class="form-control" id="ville"  maxlength="60" placeholder="Ville">
+
+		  </div>
+
+ <br />
+
+       <div class="text-center">
+
+	   <button  type="button" class=" btn btn-md btn-success" id="bouton_nouveau">Nouveau</button> 
+
+	   <button  type="button" class=" btn btn-md btn-warning" id="bouton_modif">Mettre à jour</button> 
+
+		<button  type="button" class=" btn btn-md btn-info" id="bouton_ajout">Valider</button>
+
+		  </div>
+
+		  </form>
+
+	       
+
+
+
+		
+
+          
+
+
+
+	
+
+	</fieldset>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+<footer class="bleunoir text-center">
+
+Copyright &copy; GMTE94
+
+</footer>
+
+
+
+</body>
+
+<script src="js/formpers.js"></script>
+
+<script src="js/fonctionsform.js"></script>
+
+</html>
